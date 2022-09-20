@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Shopping from your favourite stores made easy">
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="logo192.png">
+    <link rel="manifest" href="/manifest.json">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div id="root">
+        <div class="App">
+            <nav class="navbar navbar-expand-lg navbar-light sticky-top"
+                style="margin: 0px; padding-top: 15px; padding-bottom: 15px; background: rgb(244, 244, 244);">
+                <div class="container"><span class="navbar-brand"
+                        style="font-weight: bold; font-size: 24px; padding-right: 50px;"><a href="index.html"> <img
+                                src="logo.png" alt="beta-eshopping logo" class="logo"
+                                style="width: 220px;"></a></span><button aria-controls="responsive-navbar-nav"
+                        type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="navbar-collapse collapse" id="responsive-navbar-nav">
+                        <div class="me-auto navbar-nav"><a role="button" class="nav-link" tabindex="0"
+                                style="color: rgb(67, 59, 128); font-weight: 600; padding-right: 20px; font-size: 14px;"><a
+                                    class="link" href="Browse_stores.html">Browse stores</a></a><a role="button" class="nav-link"
+                                tabindex="0"
+                                style="color: rgb(67, 59, 128); font-weight: 600; padding-right: 20px; font-size: 14px;"><a
+                                    class="link" href="how_it_works.html">How it works</a></a><a role="button"
+                                class="nav-link" tabindex="0"
+                                style="color: rgb(67, 59, 128); font-weight: 600; padding-right: 20px; font-size: 14px;"><a
+                                    class="link" href="faq.html">FAQs</a></a></div>
+                        <div class="navbar-nav"><a href="login.html" data-rr-ui-event-key="/signin" class="nav-link"
+                                style="color: rgb(67, 59, 128); font-weight: 600; padding-right: 20px; font-size: 14px; margin-right: 15px;"><a
+                                    class="link" href="login.html">Login</a></a><a href="signup.html"><button type="button"
+                                    class="signup-btn btn btn-outline"
+                                    style="color: rgb(24, 23, 67); font-size: 14px; border: none; box-sizing: border-box; border-radius: 10px; width: 100px;">Sign
+                                    Up</button></a></div>
+                    </div>
+                </div>
+                <div id="progressBarContainer">
+                    <div id="progressBar" style="transform: scale(0, 1); opacity: 0;"></div>
+                </div>
+            </nav>
+            <div class="px-5 main-login-container container" style="margin-top: 30px;">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        <p class="signin-header-text"
+                            style="width: 80%; font-weight: 700; font-size: 50px; text-align: left;">Start shopping from
+                            your favourite stores</p>
+                        <p class="text-sm"
+                            style="width: 385px; margin-top: 24px; font-weight: 600; font-size: 16px; text-align: left; color: rgb(51, 51, 51);">
+                            Don’t have an account? You can <a href="/register" class="text-sm"
+                                style="color: rgb(248, 65, 69); margin-top: 10px;">Register here!</a></p>
+                        <div class="carousel">
+                            <div class="carousel slide carousel-fade">
+                                <div class="carousel-inner">
+                                    <div interval="1000" class="carousel-item"><img class="d-block carousel-img"
+                                            src="https://pngimg.com/uploads/amazon/amazon_PNG27.png" alt="Amazon"></div>
+                                    <div interval="1000" class="carousel-item"><img class="d-block carousel-img "
+                                            src="https://www.freeiconspng.com/uploads/walmart-logo-png-6.png"
+                                            alt="Walmart"></div>
+                                    <div interval="1000" class="active carousel-item"><img class="d-block carousel-img"
+                                            src="http://pngimg.com/uploads/ebay/ebay_PNG2.png" alt="Ebay"></div>
+                                    <div interval="1000" class="carousel-item"><img class="d-block carousel-img"
+                                            src="http://pngimg.com/uploads/letter_a/letter_a_PNG18.png" alt="A"></div>
+                                    <div interval="1000" class="carousel-item"><img class="d-block carousel-img"
+                                            src="https://pbs.twimg.com/profile_images/1417618404241035269/4-YFGzEe_400x400.jpg"
+                                            alt="GAP"></div>
+                                    <div interval="1000" class="carousel-item"><img class="d-block carousel-img"
+                                            src="http://pngimg.com/uploads/apple_logo/apple_logo_PNG19666.png"
+                                            alt="Apple"></div>
+                                    <div interval="1000" class="carousel-item"><img class="d-block carousel-img"
+                                            src="http://pngimg.com/uploads/ebay/ebay_PNG2.png" alt="Ebay"></div>
+                                    <div interval="1000" class="carousel-item"><img class="d-block carousel-img"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFc0iH0nLgmje_pUeTiRIrd8H1ysfjjXNMtircTHSI-m5eT-jeckPlJlR3q3ZhP6DPi0I&amp;usqp=CAU"
+                                            alt="best buy"></div>
+                                    <div interval="1000" class="carousel-item"><img class="d-block carousel-img"
+                                            src="https://s3-symbol-logo.tradingview.com/chewy--600.png" alt="chewy">
+                                    </div>
+                                    <div interval="1000" class="carousel-item"><img class="d-block carousel-img"
+                                            src="https://shopsquareone.com/wp-content/uploads/2021/09/44d1bfa116796eaba592cb53fd2c6addbd3c8c78.png"
+                                            alt="children's place"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start col-lg-4 col-md-12 col-sm-12">
+                        <div class="login-container">
+                            <h1 class="login-container-title">Welcome!</h1>
+                            <p class="login-container-description">Enter your email and password to continue.</p>
+                            <form class="" style="margin-top: 80px;">
+                                <div class="form-group" style="margin-bottom: 25px;"><label class="form-label"
+                                        for="email"
+                                        style="font-weight: 500; font-size: 16px; color: rgb(51, 51, 51);">Email</label><input
+                                        placeholder="Enter email" type="email" id="email"
+                                        class="loginFormInput form-control" value=""
+                                        style="border-radius: 8px; border: 1px solid grey; height: 46px;"></div>
+                                <div style="margin-bottom: 25px;"><label class="form-label" for="password"
+                                        style="font-weight: 500; font-size: 16px; color: rgb(51, 51, 51);">Password</label><input
+                                        placeholder="Password" type="password" id="password"
+                                        class="loginFormInput form-control" value=""
+                                        style="border-radius: 8px; border: 1px solid grey; height: 46px;">
+                                    <div class="d-flex mt-2">
+                                        <div style="margin-top: 2px;"><input type="checkbox" name="showPassword"></div>
+                                        <div><label for="showPassword"
+                                                style="margin-left: 5px; color: rgb(51, 51, 51); font-size: 13px;">Show
+                                                Password</label></div>
+                                    </div>
+                                </div><button type="submit" disabled="" class="block login-btn btn btn-primary btn-lg"
+                                    style="width: 100%; height: 50px; margin: 40px auto auto; display: block; background: rgb(255, 255, 255); border-radius: 10px; border: none; color: rgb(51, 51, 51);">Login</button>
+                                <div class="mt-4 text-center"><small id="passwordHelpBlock" class="form-text"><a
+                                            href="/resetpassword"
+                                            style="color: rgb(248, 65, 69); margin-top: 10px;">Forgot
+                                            password?</a></small></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script async="" charset="UTF-8" src="https://embed.tawk.to/_s/v4/app/63206f489b1/languages/en.js"></script>
+    <div id="ab7rbn45vc6g1663333789292" class="widget-visible"><iframe src="about:blank" frameborder="0" scrolling="no"
+            width="64px" height="60px"
+            style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:20px !important; bottom:20px !important; left:auto !important; position:fixed !important; border:0 !important; min-height:60px !important; min-width:64px !important; max-height:60px !important; max-width:64px !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:64px !important; height:60px !important; display:block !important; z-index:1000001 !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:unset !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important;"
+            id="uk06u4udtp4o1663333789345" class="" title="chat widget" data-gtm-yt-inspected-3="true"></iframe><iframe
+            src="about:blank" frameborder="0" scrolling="no" width="280px" height="330px"
+            style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:10px !important; bottom:90px !important; left:auto !important; position:fixed !important; border:0 !important; min-height:330px !important; min-width:280px !important; max-height:330px !important; max-width:280px !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:280px !important; height:330px !important; display:none !important; z-index:auto !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:5px !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important;"
+            id="tqq3tv1duogg1663333789444" class="" title="chat widget" data-gtm-yt-inspected-3="true"></iframe><iframe
+            src="about:blank" frameborder="0" scrolling="no" width="360px" height="292px"
+            style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:20px !important; bottom:100px; left:auto !important; position:fixed !important; border:0 !important; min-height:292px !important; min-width:360px !important; max-height:292px !important; max-width:360px !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:360px !important; height:292px !important; display:block !important; z-index:auto !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:unset !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important;"
+            id="squnsli3gi81663333789411" class="" title="chat widget" data-gtm-yt-inspected-3="true"></iframe><iframe
+            src="about:blank" frameborder="0" scrolling="no" width="94px" height="74px"
+            style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:28px !important; bottom:65px !important; left:auto !important; position:fixed !important; border:0 !important; min-height:74px !important; min-width:94px !important; max-height:74px !important; max-width:94px !important; padding:0 !important; margin:0px 0 0 0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:rotate(0deg) translateZ(0); -webkit-transform:rotate(0deg) translateZ(0); -ms-transform:rotate(0deg) translateZ(0); width:94px !important; height:74px !important; display:none !important; z-index:1000002 !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:unset !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important; -moz-transform:rotate(0deg) translateZ(0); -o-transform:rotate(0deg) translateZ(0); transform-origin:0; -moz-transform-origin:0; -webkit-transform-origin:0; -o-transform-origin:0; -ms-transform-origin:0;"
+            id="i0nfbrp8eti1663333789380" class="" title="chat widget" data-gtm-yt-inspected-3="true"></iframe></div>
+</body>
+
+</html>

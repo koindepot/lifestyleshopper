@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Shopping from your favourite stores made easy">
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="logo192.png">
+    <link rel="manifest" href="/manifest.json">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign-up</title>
+</head>
+
+<body>
+    <div id="root">
+        <div class="App">
+            <section style="height: 100vh; width: 100vw;">
+                <div class="row" style="height: 100%;">
+                    <div class="col-lg-5 col-md-6 col-sm-12" style="background-color: rgb(67, 59, 128);">
+                        <div class="signup-left-container container" style="margin-top: 50px; padding-left: 70px;">
+                            <div class="row">
+                                <div class="col"><a href="/">
+                                        <h4 class="mb-3"
+                                            style="color: rgb(255, 255, 255); font-size: 32px; font-weight: 600;">
+                                            betaeshopping</h4>
+                                    </a></div>
+                            </div>
+                            <div class="row" style="margin-top: 50px;">
+                                <h1 style="color: rgb(255, 255, 255); font-weight: 600;">New here?</h1>
+                                <p style="color: rgb(255, 255, 255); width: 350px; margin-top: 10px;">Your free
+                                    beta-eshopping account is only 2 seconds away!</p>
+                                <div class="d-flex mb-2 mt-4"><svg aria-hidden="true" focusable="false"
+                                        data-prefix="fas" data-icon="user-plus"
+                                        class="svg-inline--fa fa-user-plus fa-w-20 fa-lg " role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" color="white">
+                                        <path fill="currentColor"
+                                            d="M624 208h-64v-64c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v64h-64c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h64v64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-64h64c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm-400 48c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+                                        </path>
+                                    </svg>
+                                    <p class="signup-icon-description">Create an account.</p>
+                                </div>
+                                <div class="d-flex mb-2 mt-4"><svg aria-hidden="true" focusable="false"
+                                        data-prefix="fas" data-icon="list" class="svg-inline--fa fa-list fa-w-16 fa-lg "
+                                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                        color="white">
+                                        <path fill="currentColor"
+                                            d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+                                        </path>
+                                    </svg>
+                                    <p class="signup-icon-description">Browse your favourite stores.</p>
+                                </div>
+                                <div class="d-flex mb-2 mt-4"><svg aria-hidden="true" focusable="false"
+                                        data-prefix="fas" data-icon="cart-plus"
+                                        class="svg-inline--fa fa-cart-plus fa-w-18 fa-lg " role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" color="white">
+                                        <path fill="currentColor"
+                                            d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z">
+                                        </path>
+                                    </svg>
+                                    <p class="signup-icon-description">Load your cart/create a custom order.</p>
+                                </div>
+                                <div class="d-flex mb-2 mt-4"><svg aria-hidden="true" focusable="false"
+                                        data-prefix="fas" data-icon="truck-pickup"
+                                        class="svg-inline--fa fa-truck-pickup fa-w-20 fa-lg " role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" color="white">
+                                        <path fill="currentColor"
+                                            d="M624 288h-16v-64c0-17.67-14.33-32-32-32h-48L419.22 56.02A64.025 64.025 0 0 0 369.24 32H256c-17.67 0-32 14.33-32 32v128H64c-17.67 0-32 14.33-32 32v64H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h49.61c-.76 5.27-1.61 10.52-1.61 16 0 61.86 50.14 112 112 112s112-50.14 112-112c0-5.48-.85-10.73-1.61-16h67.23c-.76 5.27-1.61 10.52-1.61 16 0 61.86 50.14 112 112 112s112-50.14 112-112c0-5.48-.85-10.73-1.61-16H624c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM288 96h81.24l76.8 96H288V96zM176 416c-26.47 0-48-21.53-48-48s21.53-48 48-48 48 21.53 48 48-21.53 48-48 48zm288 0c-26.47 0-48-21.53-48-48s21.53-48 48-48 48 21.53 48 48-21.53 48-48 48z">
+                                        </path>
+                                    </svg>
+                                    <p class="signup-icon-description">Get your items delivered to your location.</p>
+                                </div>
+                                <p class="mb-4"
+                                    style="margin: 40px auto 0px; font-size: 16px; text-align: center; color: rgb(255, 255, 255); font-weight: normal;">
+                                    Have an account? <a href="login.html" style="color: tomato; margin-left: 5px;">Login
+                                        Here</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12">
+                        <div class="signup-right-container container"
+                            style="margin-top: 50px; padding-left: 70px; padding-right: 70px;">
+                            <h5 style="font-weight: 600; font-size: 35px;">Sign Up</h5>
+                            <p style="color: rgb(63, 71, 75); font-weight: 500; font-size: 16px; margin-top: 30px;">
+                                Shopping on your favourite stores is just one click away!</p>
+                            <form class="" style="margin-top: 30px;">
+                                <div class="row" style="margin-bottom: 50px;">
+                                    <div class="col-md-4 col-12">
+                                        <div class="register-form"><label class="form-label" for="firstname"
+                                                style="color: rgb(24, 23, 67); font-size: 16px; font-weight: 500;">Firstname
+                                                <span style="color: red;">*</span></label><input
+                                                placeholder="Enter First Name" type="text" id="firstname"
+                                                class="signupFormInput form-control" value=""
+                                                style="border-radius: 8px; border: 1px solid rgb(190, 189, 255); height: 46px; font-size: 14px;">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-12">
+                                        <div><label class="form-label" for="lastname"
+                                                style="color: rgb(24, 23, 67); font-size: 16px; font-weight: 500;">Lastname
+                                                <span style="color: red;">*</span></label><input
+                                                placeholder="Enter Last Name" type="text" id="lastname"
+                                                class="signupFormInput form-control" value=""
+                                                style="border-radius: 8px; border: 1px solid rgb(190, 189, 255); height: 46px; font-size: 14px;">
+                                        </div>
+                                    </div>
+                                    <div class="email-input col-md-4 col-12">
+                                        <div><label class="form-label" for="email"
+                                                style="color: rgb(24, 23, 67); font-size: 16px; font-weight: 500;">Email
+                                                <span style="color: red;">*</span></label><input
+                                                placeholder="Enter email" type="email" id="email"
+                                                class="signupFormInput form-control" value=""
+                                                style="border-radius: 8px; border: 1px solid rgb(190, 189, 255); height: 46px; font-size: 14px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-bottom: 50px;">
+                                    <div class="col-md-8 col-12">
+                                        <div class="register-form"><label class="form-label" for="phone"
+                                                style="color: rgb(24, 23, 67); font-size: 16px; font-weight: 500;">Phone
+                                                <span style="color: red;">*</span></label>
+                                            <div class="signupFormInput PhoneInput"
+                                                style="border-radius: 8px; border: 1px solid rgb(190, 189, 255); height: 46px; font-size: 14px;">
+                                                <div class="PhoneInputCountry"><select aria-label="Phone number country"
+                                                        class="PhoneInputCountrySelect">
+                                                        <option value="ZZ">International</option>
+                                                        <option value="AF">Afghanistan</option>
+                                                        <option value="AX">Åland Islands</option>
+                                                        <option value="AL">Albania</option>
+                                                        <option value="DZ">Algeria</option>
+                                                        <option value="AS">American Samoa</option>
+                                                        <option value="AD">Andorra</option>
+                                                        <option value="AO">Angola</option>
+                                                        <option value="AI">Anguilla</option>
+                                                        <option value="AG">Antigua and Barbuda</option>
+                                                        <option value="AR">Argentina</option>
+                                                        <option value="AM">Armenia</option>
+                                                        <option value="AW">Aruba</option>
+                                                        <option value="AC">Ascension Island</option>
+                                                        <option value="AU">Australia</option>
+                                                        <option value="AT">Austria</option>
+                                                        <option value="AZ">Azerbaijan</option>
+                                                        <option value="BS">Bahamas</option>
+                                                        <option value="BH">Bahrain</option>
+                                                        <option value="BD">Bangladesh</option>
+                                                        <option value="BB">Barbados</option>
+                                                        <option value="BY">Belarus</option>
+                                                        <option value="BE">Belgium</option>
+                                                        <option value="BZ">Belize</option>
+                                                        <option value="BJ">Benin</option>
+                                                        <option value="BM">Bermuda</option>
+                                                        <option value="BT">Bhutan</option>
+                                                        <option value="BO">Bolivia</option>
+                                                        <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                                        <option value="BA">Bosnia and Herzegovina</option>
+                                                        <option value="BW">Botswana</option>
+                                                        <option value="BR">Brazil</option>
+                                                        <option value="IO">British Indian Ocean Territory</option>
+                                                        <option value="BN">Brunei Darussalam</option>
+                                                        <option value="BG">Bulgaria</option>
+                                                        <option value="BF">Burkina Faso</option>
+                                                        <option value="MM">Burma</option>
+                                                        <option value="BI">Burundi</option>
+                                                        <option value="KH">Cambodia</option>
+                                                        <option value="CM">Cameroon</option>
+                                                        <option value="CA">Canada</option>
+                                                        <option value="CV">Cape Verde</option>
+                                                        <option value="KY">Cayman Islands</option>
+                                                        <option value="CF">Central African Republic</option>
+                                                        <option value="TD">Chad</option>
+                                                        <option value="CL">Chile</option>
+                                                        <option value="CN">China</option>
+                                                        <option value="CX">Christmas Island</option>
+                                                        <option value="CC">Cocos (Keeling) Islands</option>
+                                                        <option value="CO">Colombia</option>
+                                                        <option value="KM">Comoros</option>
+                                                        <option value="CG">Congo</option>
+                                                        <option value="CD">Congo, Democratic Republic of the</option>
+                                                        <option value="CK">Cook Islands</option>
+                                                        <option value="CR">Costa Rica</option>
+                                                        <option value="CI">Cote d'Ivoire</option>
+                                                        <option value="HR">Croatia</option>
+                                                        <option value="CU">Cuba</option>
+                                                        <option value="CW">Curaçao</option>
+                                                        <option value="CY">Cyprus</option>
+                                                        <option value="CZ">Czech Republic</option>
+                                                        <option value="DK">Denmark</option>
+                                                        <option value="DJ">Djibouti</option>
+                                                        <option value="DM">Dominica</option>
+                                                        <option value="DO">Dominican Republic</option>
+                                                        <option value="EC">Ecuador</option>
+                                                        <option value="EG">Egypt</option>
+                                                        <option value="SV">El Salvador</option>
+                                                        <option value="GQ">Equatorial Guinea</option>
+                                                        <option value="ER">Eritrea</option>
+                                                        <option value="EE">Estonia</option>
+                                                        <option value="ET">Ethiopia</option>
+                                                        <option value="FK">Falkland Islands</option>
+                                                        <option value="FO">Faroe Islands</option>
+                                                        <option value="FM">Federated States of Micronesia</option>
+                                                        <option value="FJ">Fiji</option>
+                                                        <option value="FI">Finland</option>
+                                                        <option value="FR">France</option>
+                                                        <option value="GF">French Guiana</option>
+                                                        <option value="PF">French Polynesia</option>
+                                                        <option value="GA">Gabon</option>
+                                                        <option value="GM">Gambia</option>
+                                                        <option value="GE">Georgia</option>
+                                                        <option value="DE">Germany</option>
+                                                        <option value="GH">Ghana</option>
+                                                        <option value="GI">Gibraltar</option>
+                                                        <option value="GR">Greece</option>
+                                                        <option value="GL">Greenland</option>
+                                                        <option value="GD">Grenada</option>
+                                                        <option value="GP">Guadeloupe</option>
+                                                        <option value="GU">Guam</option>
+                                                        <option value="GT">Guatemala</option>
+                                                        <option value="GG">Guernsey</option>
+                                                        <option value="GN">Guinea</option>
+                                                        <option value="GW">Guinea-Bissau</option>
+                                                        <option value="GY">Guyana</option>
+                                                        <option value="HT">Haiti</option>
+                                                        <option value="VA">Holy See (Vatican City State)</option>
+                                                        <option value="HN">Honduras</option>
+                                                        <option value="HK">Hong Kong</option>
+                                                        <option value="HU">Hungary</option>
+                                                        <option value="IS">Iceland</option>
+                                                        <option value="IN">India</option>
+                                                        <option value="ID">Indonesia</option>
+                                                        <option value="IR">Iran</option>
+                                                        <option value="IQ">Iraq</option>
+                                                        <option value="IE">Ireland</option>
+                                                        <option value="IM">Isle of Man</option>
+                                                        <option value="IL">Israel</option>
+                                                        <option value="IT">Italy</option>
+                                                        <option value="JM">Jamaica</option>
+                                                        <option value="JP">Japan</option>
+                                                        <option value="JE">Jersey</option>
+                                                        <option value="JO">Jordan</option>
+                                                        <option value="KZ">Kazakhstan</option>
+                                                        <option value="KE">Kenya</option>
+                                                        <option value="KI">Kiribati</option>
+                                                        <option value="XK">Kosovo</option>
+                                                        <option value="KW">Kuwait</option>
+                                                        <option value="KG">Kyrgyzstan</option>
+                                                        <option value="LA">Laos</option>
+                                                        <option value="LV">Latvia</option>
+                                                        <option value="LB">Lebanon</option>
+                                                        <option value="LS">Lesotho</option>
+                                                        <option value="LR">Liberia</option>
+                                                        <option value="LY">Libya</option>
+                                                        <option value="LI">Liechtenstein</option>
+                                                        <option value="LT">Lithuania</option>
+                                                        <option value="LU">Luxembourg</option>
+                                                        <option value="MO">Macao</option>
+                                                        <option value="MG">Madagascar</option>
+                                                        <option value="MW">Malawi</option>
+                                                        <option value="MY">Malaysia</option>
+                                                        <option value="MV">Maldives</option>
+                                                        <option value="ML">Mali</option>
+                                                        <option value="MT">Malta</option>
+                                                        <option value="MH">Marshall Islands</option>
+                                                        <option value="MQ">Martinique</option>
+                                                        <option value="MR">Mauritania</option>
+                                                        <option value="MU">Mauritius</option>
+                                                        <option value="YT">Mayotte</option>
+                                                        <option value="MX">Mexico</option>
+                                                        <option value="MD">Moldova</option>
+                                                        <option value="MC">Monaco</option>
+                                                        <option value="MN">Mongolia</option>
+                                                        <option value="ME">Montenegro</option>
+                                                        <option value="MS">Montserrat</option>
+                                                        <option value="MA">Morocco</option>
+                                                        <option value="MZ">Mozambique</option>
+                                                        <option value="NA">Namibia</option>
+                                                        <option value="NR">Nauru</option>
+                                                        <option value="NP">Nepal</option>
+                                                        <option value="NL">Netherlands</option>
+                                                        <option value="NC">New Caledonia</option>
+                                                        <option value="NZ">New Zealand</option>
+                                                        <option value="NI">Nicaragua</option>
+                                                        <option value="NE">Niger</option>
+                                                        <option value="NG">Nigeria</option>
+                                                        <option value="NU">Niue</option>
+                                                        <option value="NF">Norfolk Island</option>
+                                                        <option value="KP">North Korea</option>
+                                                        <option value="MK">North Macedonia</option>
+                                                        <option value="MP">Northern Mariana Islands</option>
+                                                        <option value="NO">Norway</option>
+                                                        <option value="OM">Oman</option>
+                                                        <option value="PK">Pakistan</option>
+                                                        <option value="PW">Palau</option>
+                                                        <option value="PS">Palestine</option>
+                                                        <option value="PA">Panama</option>
+                                                        <option value="PG">Papua New Guinea</option>
+                                                        <option value="PY">Paraguay</option>
+                                                        <option value="PE">Peru</option>
+                                                        <option value="PH">Philippines</option>
+                                                        <option value="PL">Poland</option>
+                                                        <option value="PT">Portugal</option>
+                                                        <option value="PR">Puerto Rico</option>
+                                                        <option value="QA">Qatar</option>
+                                                        <option value="RE">Reunion</option>
+                                                        <option value="RO">Romania</option>
+                                                        <option value="RU">Russia</option>
+                                                        <option value="RW">Rwanda</option>
+                                                        <option value="BL">Saint Barthélemy</option>
+                                                        <option value="SH">Saint Helena</option>
+                                                        <option value="KN">Saint Kitts and Nevis</option>
+                                                        <option value="LC">Saint Lucia</option>
+                                                        <option value="MF">Saint Martin (French Part)</option>
+                                                        <option value="PM">Saint Pierre and Miquelon</option>
+                                                        <option value="VC">Saint Vincent and the Grenadines</option>
+                                                        <option value="WS">Samoa</option>
+                                                        <option value="SM">San Marino</option>
+                                                        <option value="ST">Sao Tome and Principe</option>
+                                                        <option value="SA">Saudi Arabia</option>
+                                                        <option value="SN">Senegal</option>
+                                                        <option value="RS">Serbia</option>
+                                                        <option value="SC">Seychelles</option>
+                                                        <option value="SL">Sierra Leone</option>
+                                                        <option value="SG">Singapore</option>
+                                                        <option value="SX">Sint Maarten</option>
+                                                        <option value="SK">Slovakia</option>
+                                                        <option value="SI">Slovenia</option>
+                                                        <option value="SB">Solomon Islands</option>
+                                                        <option value="SO">Somalia</option>
+                                                        <option value="ZA">South Africa</option>
+                                                        <option value="KR">South Korea</option>
+                                                        <option value="SS">South Sudan</option>
+                                                        <option value="ES">Spain</option>
+                                                        <option value="LK">Sri Lanka</option>
+                                                        <option value="SD">Sudan</option>
+                                                        <option value="SR">Suriname</option>
+                                                        <option value="SJ">Svalbard and Jan Mayen</option>
+                                                        <option value="SZ">Swaziland</option>
+                                                        <option value="SE">Sweden</option>
+                                                        <option value="CH">Switzerland</option>
+                                                        <option value="SY">Syria</option>
+                                                        <option value="TW">Taiwan</option>
+                                                        <option value="TJ">Tajikistan</option>
+                                                        <option value="TZ">Tanzania</option>
+                                                        <option value="TH">Thailand</option>
+                                                        <option value="TL">Timor-Leste</option>
+                                                        <option value="TG">Togo</option>
+                                                        <option value="TK">Tokelau</option>
+                                                        <option value="TO">Tonga</option>
+                                                        <option value="TT">Trinidad and Tobago</option>
+                                                        <option value="TA">Tristan da Cunha</option>
+                                                        <option value="TN">Tunisia</option>
+                                                        <option value="TR">Turkey</option>
+                                                        <option value="TM">Turkmenistan</option>
+                                                        <option value="TC">Turks and Caicos Islands</option>
+                                                        <option value="TV">Tuvalu</option>
+                                                        <option value="UG">Uganda</option>
+                                                        <option value="UA">Ukraine</option>
+                                                        <option value="AE">United Arab Emirates</option>
+                                                        <option value="GB">United Kingdom</option>
+                                                        <option value="US">United States</option>
+                                                        <option value="UY">Uruguay</option>
+                                                        <option value="UZ">Uzbekistan</option>
+                                                        <option value="VU">Vanuatu</option>
+                                                        <option value="VE">Venezuela</option>
+                                                        <option value="VN">Vietnam</option>
+                                                        <option value="VG">Virgin Islands, British</option>
+                                                        <option value="VI">Virgin Islands, U.S.</option>
+                                                        <option value="WF">Wallis and Futuna</option>
+                                                        <option value="EH">Western Sahara</option>
+                                                        <option value="YE">Yemen</option>
+                                                        <option value="ZM">Zambia</option>
+                                                        <option value="ZW">Zimbabwe</option>
+                                                    </select>
+                                                    <div class="PhoneInputCountryIcon PhoneInputCountryIcon--border">
+                                                        <img class="PhoneInputCountryIconImg" alt="Nigeria"
+                                                            src="https://purecatamphetamine.github.io/country-flag-icons/3x2/NG.svg">
+                                                    </div>
+                                                    <div class="PhoneInputCountrySelectArrow"></div>
+                                                </div><input type="tel" autocomplete="tel"
+                                                    placeholder="Select country and enter phone number"
+                                                    class="PhoneInputInput" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-12">
+                                        <div><label class="form-label" for="username"
+                                                style="color: rgb(24, 23, 67); font-size: 16px; font-weight: 500;">Username
+                                                <span style="color: red;">*</span></label><input
+                                                placeholder="Enter Username" type="text" id="username"
+                                                class="signupFormInput form-control" value=""
+                                                style="border-radius: 8px; border: 1px solid rgb(190, 189, 255); height: 46px; font-size: 14px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-bottom: 15px;">
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="register-form"><label class="form-label" for="password"
+                                                style="color: rgb(24, 23, 67); font-size: 16px; font-weight: 500;">Password
+                                                <span style="color: red;">*</span></label><input placeholder="Password"
+                                                type="password" id="password" class="signupFormInput form-control"
+                                                value=""
+                                                style="border-radius: 8px; border: 1px solid rgb(190, 189, 255); height: 46px; font-size: 14px;">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div><label class="form-label" for="password2"
+                                                style="color: rgb(24, 23, 67); font-size: 16px; font-weight: 500;">Confirm
+                                                Password <span style="color: red;">*</span></label><input
+                                                placeholder="Confirm Password" type="password" id="password2"
+                                                class="signupFormInput register-form form-control" value=""
+                                                style="border-radius: 8px; border: 1px solid rgb(190, 189, 255); height: 46px; font-size: 14px;">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12">
+                                        <div><label class="form-label" for="referral"
+                                                style="color: rgb(24, 23, 67); font-size: 16px; font-weight: 500;">Who
+                                                referred you?</label><input placeholder="Enter referral's name"
+                                                type="text" id="referral" class="signupFormInput form-control" value=""
+                                                style="border-radius: 8px; border: 1px solid rgb(190, 189, 255); height: 46px; font-size: 14px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-4" id="formGridCheckbox">
+                                    <div class="" style="display: inline-flex;"><input type="checkbox"
+                                            class="form-check-input"></div><button class="form-check-label"
+                                        style="background: none; border: none; color: rgb(67, 59, 128); cursor: pointer; vertical-align: text-bottom; margin-left: 10px;">I
+                                        accept the terms and conditions.</button>
+                                </div><button type="submit" disabled=""
+                                    class="signup-btn mobile-button-responsive btn btn-primary btn-lg"
+                                    style="width: 50%; height: 50px; display: block; background: rgb(67, 59, 128); border-radius: 10px; font-weight: 500; border: none; margin: 0px auto;">
+                                    <div style="display: inline-flex;">Register</div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script async="" charset="UTF-8" src="main.js"></script>
+    <div id="ab7rbn45vc6g1663333789292" class="widget-visible"><iframe src="about:blank" frameborder="0" scrolling="no"
+            width="64px" height="60px"
+            style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:20px !important; bottom:20px !important; left:auto !important; position:fixed !important; border:0 !important; min-height:60px !important; min-width:64px !important; max-height:60px !important; max-width:64px !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:64px !important; height:60px !important; display:block !important; z-index:1000001 !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:unset !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important;"
+            id="uk06u4udtp4o1663333789345" class="" title="chat widget" data-gtm-yt-inspected-3="true"></iframe><iframe
+            src="about:blank" frameborder="0" scrolling="no" width="280px" height="330px"
+            style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:10px !important; bottom:90px !important; left:auto !important; position:fixed !important; border:0 !important; min-height:330px !important; min-width:280px !important; max-height:330px !important; max-width:280px !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:280px !important; height:330px !important; display:none !important; z-index:auto !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:5px !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important;"
+            id="tqq3tv1duogg1663333789444" class="" title="chat widget" data-gtm-yt-inspected-3="true"></iframe><iframe
+            src="about:blank" frameborder="0" scrolling="no" width="360px" height="292px"
+            style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:20px !important; bottom:100px; left:auto !important; position:fixed !important; border:0 !important; min-height:292px !important; min-width:360px !important; max-height:292px !important; max-width:360px !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:360px !important; height:292px !important; display:block !important; z-index:auto !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:unset !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important;"
+            id="squnsli3gi81663333789411" class="" title="chat widget" data-gtm-yt-inspected-3="true"></iframe><iframe
+            src="about:blank" frameborder="0" scrolling="no" width="94px" height="74px"
+            style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:28px !important; bottom:65px !important; left:auto !important; position:fixed !important; border:0 !important; min-height:74px !important; min-width:94px !important; max-height:74px !important; max-width:94px !important; padding:0 !important; margin:0px 0 0 0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:rotate(0deg) translateZ(0); -webkit-transform:rotate(0deg) translateZ(0); -ms-transform:rotate(0deg) translateZ(0); width:94px !important; height:74px !important; display:none !important; z-index:1000002 !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:unset !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important; -moz-transform:rotate(0deg) translateZ(0); -o-transform:rotate(0deg) translateZ(0); transform-origin:0; -moz-transform-origin:0; -webkit-transform-origin:0; -o-transform-origin:0; -ms-transform-origin:0;"
+            id="i0nfbrp8eti1663333789380" class="" title="chat widget" data-gtm-yt-inspected-3="true"></iframe></div>
+</body>
+
+</html>

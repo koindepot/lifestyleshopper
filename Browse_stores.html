@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Shopping from your favourite stores made easy">
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="logo192.png">
+    <link rel="manifest" href="/manifest.json">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Browse Stores</title>
+</head>
+
+<body>
+    <div id="root">
+        <div class="App">
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light sticky-top"
+                    style="margin: 0px; padding-top: 15px; padding-bottom: 15px; background: rgb(244, 244, 244);">
+                    <div class="container"><span class="navbar-brand"
+                            style="font-weight: bold; font-size: 24px; padding-right: 50px;"><a href="index.html"> <img
+                                    src="logo.png" alt="beta-eshopping logo"
+                                    class="logo" style="width: 220px;"></a></span><button
+                            aria-controls="responsive-navbar-nav" type="button" aria-label="Toggle navigation"
+                            class="navbar-toggler collapsed"><span class="navbar-toggler-icon"></span></button>
+                        <div class="navbar-collapse collapse" id="responsive-navbar-nav">
+                            <div class="me-auto navbar-nav"><a role="button" class="nav-link" tabindex="0"
+                                    style="color: rgb(67, 59, 128); font-weight: 600; padding-right: 20px; font-size: 14px;"><a
+                                        class="link" href="Browse_stores.html">Browse stores</a></a><a role="button"
+                                    class="nav-link" tabindex="0"
+                                    style="color: rgb(67, 59, 128); font-weight: 600; padding-right: 20px; font-size: 14px;"><a
+                                        class="link" href="how_it_works.html">How it works</a></a><a role="button"
+                                    class="nav-link" tabindex="0"
+                                    style="color: rgb(67, 59, 128); font-weight: 600; padding-right: 20px; font-size: 14px;"><a
+                                        class="link" href="faq.html">FAQs</a></a></div>
+                            <div class="navbar-nav"><a href="/signin" data-rr-ui-event-key="/signin" class="nav-link"
+                                    style="color: rgb(67, 59, 128); font-weight: 600; padding-right: 20px; font-size: 14px; margin-right: 15px;"><a
+                                        class="link" href="login.html">Login</a></a><a href="signup.html"><button
+                                        type="button" class="signup-btn btn btn-outline"
+                                        style="color: rgb(24, 23, 67); font-size: 14px; border: none; box-sizing: border-box; border-radius: 10px; width: 100px;">Sign
+                                        Up</button></a></div>
+                        </div>
+                    </div>
+                    <div id="progressBarContainer">
+                        <div id="progressBar" style="transform: scale(0, 1); opacity: 0;"></div>
+                    </div>
+                </nav>
+                <div class="container mt-5">
+                    <div class="row" style="margin: 0px 0px 50px 10%;">
+                        <div class="col-lg-8">
+                            <p>Can’t find your favourite store? <a href="/custom-order"
+                                    style="color: rgb(248, 65, 69); text-decoration: none;">Place a custom order</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <form class="">
+                                <div class="input-group" style="width: 90%;"><input placeholder="Search stores"
+                                        type="text" class="mr-sm-2 bes-input-box-shadow form-control" value="">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="mx-auto row" style="text-align: center; width: 90%;">
+                        <div class="col-lg-3 col-12"><a href="https://www.costco.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://iconape.com/wp-content/png_logo_vector/costco-wholesale-1.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">costco</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.etsy.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.etsy.com/images/mobile-landing/icon-etsy-app@2x.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Etsy</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.kohls.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/052012/kohls.png?itok=uSvEl8O9"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Kohl's</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.kroger.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.producemarketguide.com/sites/default/files/styles/company_logo/public/109048_Kroger%20Co%2C%20The.gif?itok=X-pVJBFz"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">kroger</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.officedepot.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.logolynx.com/images/logolynx/42/426eeaaa1bda4dfcc9a72ea86a230f03.jpeg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Office Depot</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.michaels.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://i.colnect.net/f/1853/253/Red-Logo.jpg" class="rounded"
+                                        style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Michaels</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.wayfair.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://i.pinimg.com/originals/64/66/c1/6466c1bbb9bdc4dd70561651b87878dc.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Wayfair</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.yoox.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://ecommercenews.eu/wp-content/uploads/2014/11/Screen-Shot-2014-11-08-at-11.24.56-.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">YOOX</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.zara.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0007/7792/brand.gif?itok=GF7SSZp0"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Zara</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.zavvi.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://cdn.sdccdn.com/images/savings/logo/4897616.png" class="rounded"
+                                        style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Zavvi</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.ebay.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="http://pngimg.com/uploads/ebay/ebay_PNG2.png" class="rounded"
+                                        style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">ebay</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://walmart.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.freeiconspng.com/uploads/walmart-logo-png-6.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">walmart</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.victoriassecret.com/us/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://i.pinimg.com/originals/28/54/87/28548775af77d217786e2c873cc2ea0e.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Victoria's Secret</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.forever21.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://i.pinimg.com/originals/1c/cc/0c/1ccc0c42b439d7ebbdf926b3c0524912.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Forever 21</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.macys.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.bridgewatercommons.com/wp-content/uploads/2020/10/macys_logo-390x262-1.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Macy's</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.fashionnova.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://royallyyours364669940.files.wordpress.com/2019/12/80c81c6ddda40a10c76c58693b79b231.jpg?w=500"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Fashion Nova</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.gap.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://seeklogo.com/images/G/Gap-logo-7714FE6563-seeklogo.com.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">GAP</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.childrensplace.com/us/home" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://seeklogo.com/images/T/the-childrens-place-logo-583006C531-seeklogo.com.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Children's place</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.bestbuy.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://png.pngitem.com/pimgs/s/140-1401470_original-best-buy-logo-hd-png-download.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">BestBuy</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.bathandbodyworks.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://scene7.samsclub.com/is/image/samsclub/0079936623998_A?$DT_PDP_Image$"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Bath &amp; Body Works</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.zappos.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/gray/CKK6HULPTJCU3C77YEEICTUQOY.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Zappos</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.petco.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/022018/untitled-1_10.png?lR5ba0Yhy.Kfmrg6Nzeo96aCVSDTKfd0&amp;itok=sEW_AVsq"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Petco</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.aeropostale.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://i.pinimg.com/originals/c7/76/01/c77601a51aab06397e9039eb4701af74.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">AÉROPOSTALE</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://oldnavy.gap.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://lbvfs.com/wp-content/uploads/2017/02/old-navy-logo-200x200.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Old Navy</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.shopdisney.com" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://getlasso.co/wp-content/uploads/shopdisney-logo.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">shopDisney</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.converse.com" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://i.pinimg.com/200x/17/a8/1d/17a81d46e91742fb33ee584af3578917.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Converse</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.walgreens.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="http://solarfeeds.com/mag/wp-content/uploads/walgreens-logo1.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Walgreens</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.blushmark.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://promosearcher.com/images/new_merchant_logo/74269_cover.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Blushmark</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.ebooks.com" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMD4FkI6uDBEs36agEFu2E60UNbgjAULQvm4tIuLTvuTTsJzMbenT5-eTNca738XG7miQ&amp;usqp=CAU"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">eBooks</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.zulily.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://cfcdn-skin.zulily.com/media/catalog/treatments/1621043215278/240x2000/1497c2a3-31bb-40b7-9ee5-94d9de528bc6.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Zulily</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.hackett.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://khushiyan.pk/wp-content/uploads/2021/07/1619521246739.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Hackett London</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.chewy.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://cdn.dribbble.com/users/959882/screenshots/3102938/chewy-logo-animation_still_2x.gif?compress=1&amp;resize=400x300&amp;vertical=top"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Chewy</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.kennethcole.com" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://m.media-amazon.com/images/S/aplus-media/vc/e2d0f70b-f630-46f3-9b55-1c3517c08f1c._CR0,0,300,300_PT0_SX300__.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Kenneth Cole</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.crateandbarrel.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1397200303/e1ed87605fcd959b734a2ae47ea9826a.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Crate &amp; Barrel</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.amazon.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Amazon</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.newegg.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0011/4302/brand.gif?itok=ulSenp_B"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Newegg</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.carters.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://1000logos.net/wp-content/uploads/2020/02/carters-babies-and-kids-logo.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Carter's</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.hugoboss.com/uk/home" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://d10pef68i4w9ia.cloudfront.net/companies/logos/9531/Hugo-Boss_500x500_thumb.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Hugoboss</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.marksandspencer.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.clickandcollectuk.co.uk/wp-content/uploads/2020/07/marksandspencer-clickandcollect.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Marks and Spencer</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.dorothyperkins.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.victoriacentrellandudno.co.uk/wp-content/uploads/2015/10/Dorothy-Perkins-logo.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Dorothy Perkins</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.debenhams.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://pbs.twimg.com/profile_images/1180107745145565185/3f2ZS_I7_400x400.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Debenhams</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.boden.co.uk/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.academicperks.org/wp-content/uploads/2019/02/boden-updated-logo.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Boden</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.johnlewis.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://dbx9jsyriv02l.cloudfront.net/website/company-profile/223/john_lewis_partnership_profile_200x200_1547134952.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">John Lewis</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.matalan.co.uk/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://cdn3.dontpayfull.com/media/logos/size/300x300/matalan.co.uk..png?v=20200622072729851248"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Matalan</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.selfridges.com/GB/en/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://bellspowersolutions.co.uk/sites/solutions/files/styles/370_wide/public/client_images/Client-Logos_Selfridges.png?itok=IGvwIxTu"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Selfridges</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.newlook.com/uk" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://farehamshopping.com/wp-content/uploads/2020/03/New-Look-1.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">New look</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.boots.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://static.wixstatic.com/media/13aee8_d1891d6fa74d404ab617411a65aa7aba~mv2.jpg/v1/fill/w_280,h_280,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Boots_Mono.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Boots</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.argos.co.uk/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://cdn.dribbble.com/users/2467738/screenshots/6327994/dribbble-03_4x.jpg?compress=1&amp;resize=400x300&amp;vertical=top"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Argos</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://shop.mango.com/gb" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://i.pinimg.com/originals/58/a3/8e/58a38ebcedb96410f5c7c509c6ae6c4b.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Mango</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.brandalley.co.uk/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://static.aklamio.com/promotions/images/ed502481d4da0e68f213c1a1bb6d05f502286f36/wall/brandalley-logo.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">BrandAlley</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.urbanoutfitters.com/en-gb/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://imageseu.urbndata.com/is/image/UrbanOutfittersEU/05e36e39-a79c-4107-bba3-06abb8975263"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Urban outfitters</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.monsoon.co.uk/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/062012/monsoon.png?itok=qcUijaXP"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">monsoon</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.tkmaxx.com/uk/en/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.craigleithretailpark.co.uk/uploads/1/1/9/7/119705489/tkmaxx_3.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">TK maxx</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://direct.asda.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://i.pinimg.com/originals/c6/ed/95/c6ed95a57adaaa29161db4d5ca1562cd.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Direct asda</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://very.co.uk/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsjjlA3i__wu3XzzHRaZ49uwUvc-MD-06svDSBgwZONKqzEDMGo9wkI1_r3pN2r0ltTls&amp;usqp=CAU"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Very</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.taylorstitch.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://media-exp1.licdn.com/dms/image/C560BAQE_0TN1LBwr1w/company-logo_200_200/0/1571947567461?e=2147483647&amp;v=beta&amp;t=zD5QScD7821Eihz-VUxyDXpNxP85gho67ZZKvoIagSM"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Taylor Stitch</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.charlestyrwhitt.com/us/home" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://coda.newjobs.com/api/imagesproxy/ms/clu/xw22/xw229839919wx/branding/6865/Charles-Tyrwhitt-logo.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Charles Tyrwhitt</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.overstock.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_F1hzyKj0WWWFiP1a7DjLKGoRb_oIDAB8XQ&amp;usqp=CAU"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Overstock</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.6pm.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/51niozI5peL.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">6pm</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://fentybeauty.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.allintheblush.com/wp-content/uploads/2018/05/Fenty-Beauty-Logo.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Fenty Beauty</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.lookfantastic.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/71rC-z9VAZL.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Look Fantastic</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="http://ebonyline.com" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://blogebonyline.files.wordpress.com/2020/12/ebonyline-.com_-1.png?w=640"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Ebonyline</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.missguided.co.uk/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://image.winudf.com/v2/image1/Y29tLnBvcXN0dWRpby5hcHAucGxhdGZvcm0ubWlzc2d1aWRlZF9pY29uXzE2NDUwNTI3ODVfMDcz/icon.png?w=&amp;fakeurl=1"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Missguided</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://help.houseoffraser.co.uk" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/zpyalgwtc0kdkvlyruuq"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">House Of Fraser</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.aldoshoes.co.uk/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.babylandss2.com/image/babylandss2/image/data/aldo_logo_babyland.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">ALDO</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.hm.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://files.cults3d.com/uploaders/15233766/illustration-file/1bb3f954-78ee-4917-93c4-a7dab6abfc81/99_large.jpeg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">H&amp;M</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.nastygal.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://image.apktoy.com/img/0d/com.gpshopper.nastygal/icon.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Nasty Gal</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.boohoo.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuRZAcFXuZxA37zy6N2AUaKTJ--cTBJgVvvg&amp;usqp=CAU"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Boohoo</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.ralphlauren.com" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://1000logos.net/wp-content/uploads/2017/06/symbol-Ralph-Lauren.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Ralph Lauren</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.sportsdirect.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT72vBAglp2lsP2zwDOCySwfHGBt5E5IbIBTg&amp;usqp=CAU"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Sports Direct</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.next.co.uk/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://i.pinimg.com/600x315/e3/5e/96/e35e9626cc9a548c3f8e571724e6e8c0.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Next</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.clarks.co.uk/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://d13080yemosbe2.cloudfront.net/Images/GiftCardFaceplates/External/CLARKS_fp01.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Clarks</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.lauras-boutique.com" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLa_iRKnzT0gukX5W_i7A97DLhMrdLrvXPBQ&amp;usqp=CAU"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Lauras Boutique</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.neimanmarcus.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://cjps.com/wp-content/uploads/2017/11/neiman-marcus.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Neiman Marcus</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.giuliofashion.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://dealrated.com/assets/store_images/giulio-fashion.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Giulio Fashion</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.davidsbridal.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://montco.today/wp-content/uploads/sites/2/2019/11/pink-davids-bridal-logo-1.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">David's Bridal</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.jamesallen.com/engagement-rings/"
+                                target="_blank" rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://jewelsadvisor.com/wp-content/uploads/2022/02/logo-james-allen-200.png?ezimgfmt=rs:331x198/rscb1/ng:webp/ngcb1"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">James Allen</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.isawitfirst.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/0f14295fa41d247c2d8a"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">I saw it first</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.michaelkors.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.barcelona-outlet.com/img/m/34.jpg" class="rounded"
+                                        style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Michael Kor</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.nordstromrack.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://riversidecvb.com/wp-content/uploads/2016/04/Website-Shopping-Plaza-Nordstrom-Rack-logo.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Nordstorm Rack</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.nordstrom.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://freeportpress.com/wp-content/uploads/2019/05/nordstrom.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Nordstorm</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www4.kitbag.com/en/?cur=GBP" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://websitereviews.co/wp-content/uploads/2017/10/images.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Kitbag</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.farfetch.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://m.buro247.ua/images/2020/09/1599732500928012.jpg" class="rounded"
+                                        style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">FARFETCH</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.jomashop.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/z0gba9rofnp3qdendlqf"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">JomaShop</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://donaldpliner.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://pbs.twimg.com/profile_images/882620640494325761/nSIeGVrh_400x400.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Donald Pliner</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://sardinellistore.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://sardinellistore.com/wp-content/uploads/2020/03/Sardinelli-store.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">SARDINELLI</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://cottonon.com/UK/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/5bfb6ce7b10598545932984f/1559002770733-OTPM5ZGVVEMLSQRVZXXM/Cotton+On.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Cotton. on &amp; co</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a
+                                href="https://www.everything5pounds.com/en/New-Arrivals/c/new-arrivals" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://play-lh.googleusercontent.com/3wzBHMpzo960qy0OIJBsTSjmOoPkHNG1-9MA1bgw96aq83WkKrn386TNXALhv-sZBw"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Everything 5 pounds</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.accessorize.com/uk/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.visitaylesbury.co.uk/wp-content/sabai/File/files/l_b19e24fef50b4db007ef75b10786b901.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Accessorize</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://anneklein.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://logopond.com/logos/a8de6ad166e707b133706442e5bdfc2f.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Anne Klein</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.payless.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.fairlanevillagemall.com/wp-content/uploads/2017/12/logo-payless-shoesource-300x300.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Payless</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.shoeaholics.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://lh3.googleusercontent.com/w-t4J9ZX2Fb3XJ01rdOfU4cuP2mOuneIV-Djnel2ZyIO_VtbZVYe82epyuwyN2QsVRU"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Shoeaholics</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.isabellaoliver.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://ad19f3f32c8ffcbb36a3-900e03d2c940cd7044aba7e8955d765a.ssl.cf2.rackcdn.com/logos/260/13983_sq_2.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Isabella Oliver</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.feelunique.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeZnXO7lYxpI7VvN622priP6gwSZIbwa3tsE89MaaTPuAKxsydejbs0XHPy6HR0bHIBeM&amp;usqp=CAU"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Feel Unique</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.ulta.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://s3.amazonaws.com/i.gottadeal.com/main/images/logos/ULTABeauty.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Ulta Beauty</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://shop.lululemon.com/?locale=en_GB&amp;sl=GB"
+                                target="_blank" rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6EL-y5t0lIJPHhyoYrfmNAWKiOMGGjB3eQGLJJcgOipHJj8o0lOww0OGuYBB_i8WyK1U&amp;usqp=CAU"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Lululemon</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://getcorewear.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/yq4psft05ykftqcgbwpj"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">CoreWear</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.carparts.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://invitationdigital-res-1.cloudinary.com/image/upload/w_165,h_165,q_auto,fl_strip_profile,f_auto/carparts_logo.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Carparts</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.fragrancedirect.co.uk/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://cdn.couporando.com/co.uk/img/fragrance-direct-voucher-codes.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Fragrance Direct</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.mvmt.com" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/r7kdkcqpmlzsglu5ftrc"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">MVMT</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.mioskincare.co.uk/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.a2magazine.co.za/wp-content/uploads/2015/07/13.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Mio SkinCare</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.simmi.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://media.glassdoor.com/sqll/3207872/simmi-s-squarelogo-1617948381756.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Simmi London</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.tmlewin.co.uk/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://i.pinimg.com/originals/69/93/82/6993821d6499158b7d3245ce5f972621.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">T.M.Lewin</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.lyst.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.exchangewire.com/wp-content/uploads/2021/05/Lyst-logo.jpeg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Lyst</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.trouva.com/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://cdn.shopper.com/images/store-logos/trouva-1557225310354.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Trouva</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="http://safetoe.co.uk" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://sc02.alicdn.com/kf/HTB1X819KFXXXXa9XVXX760XFXXXL.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Safetoe</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="http://santaluciafragrance.com" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://cdn.shopify.com/s/files/1/0558/7501/0731/products/Untitleddesign-2022-02-11T092004.722_600x.png?v=1644589221"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Santa Lucia Fragrance</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.office.co.uk/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.office.co.uk/_ui/responsive/site-office/images/office-logo.svg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">OFFICE</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="http://www.shoezone.com" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.highchelmer.com/wp-content/uploads/2017/09/shoezone.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Shoezone</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="http://www.thefragranceshop.co.uk" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1479294749/kaiq2iq7unp6whcgalvn.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">The Fragrance Shop</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="http://www.wilko.com" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDdwWJiigNIZN1H7U8QXDyXbvbKfqRNvRkCpKNQ6-pGPzOnRYnWIysRYRQil-c84MzmOs&amp;usqp=CAU"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Wilko</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://loft.co.uk/" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8LpjVGwpXzAxBjl7hmbe_ivwxB0fRUTtM3ZmxGREPWC5nOSWsYOXEDTDzzvmBVCMkY-Q&amp;usqp=CAU"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Loft</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.gymshark.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://i.pinimg.com/originals/8b/8b/37/8b8b3708a3c63b623fe387182cca2481.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">GymShark</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="http://www.guess.com" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://i.pinimg.com/originals/a2/18/ae/a218aeaa2b30771501639d258af85d4a.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Guess</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.jdsports.co.uk/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://www.logolynx.com/images/logolynx/31/31ef3803d401138cedf7190e2c779f1a.jpeg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">JDSports</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="http://www.autozone.com" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://pbs.twimg.com/profile_images/1304170131967311872/_8hPQMqw_400x400.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Auto Zone</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.wallis.co.uk/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://media.glassdoor.com/sqll/805029/wallis-squarelogo-1437141662018.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Wallis</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.amazon.co.uk/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl07O6vDL8VY3ol5KOCbwNA6jUpt0WTOWMjg&amp;usqp=CAU"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Amazon UK</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://m.shein.com" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://files.prezzee.com.au/media/sku-theme-designs/shein-30b60bea-18cd-4a76-8cbc-ae4cbde499c7/shein.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Shein</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.worldofwatches.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://i.pinimg.com/280x280_RS/0c/3e/31/0c3e31d78aeed611f028ad9dd610d246.jpg"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">World of Watches</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.aztecasoccer.com" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://logopond.com/logos/32dc8690d5e3c2a2e9092506c2ac9928.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Aztecasoccer</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.riverisland.com/" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXsvi5K0wG9ttNDhyew1rsS3fim-7S_x3FWg&amp;usqp=CAU"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">River Island</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.prettylittlething.com" target="_blank"
+                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://play-lh.googleusercontent.com/nJN0OJ8CPBSMMw3SeaplgMuC1At1avLBHvraWtsRslIxF8GxY2R5w0EByzs8wuz4zmp_"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">PRETTYLITTLETHING</p>
+                                </div>
+                            </a></div>
+                        <div class="col-lg-3 col-12"><a href="https://www.apple.com" target="_blank" rel="noreferrer"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="border stores-card"
+                                    style="width: 70%; margin: 20px auto; padding-top: 20px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;">
+                                    <img src="https://png.pngitem.com/pimgs/s/162-1627735_apple-store-logo-hd-png-download.png"
+                                        class="rounded" style="width: 100px; height: 100px;">
+                                    <p style="font-weight: 500; padding-top: 10px;">Apple Store</p>
+                                </div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script async="" charset="UTF-8" src="https://embed.tawk.to/_s/v4/app/63206f489b1/languages/en.js"></script>
+    <div id="hjdnigtt11eg1663329399485" class="widget-visible"><iframe src="about:blank" frameborder="0" scrolling="no"
+            width="64px" height="60px"
+            style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:20px !important; bottom:20px !important; left:auto !important; position:fixed !important; border:0 !important; min-height:60px !important; min-width:64px !important; max-height:60px !important; max-width:64px !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:64px !important; height:60px !important; display:block !important; z-index:1000001 !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:unset !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important;"
+            id="qimqpal9qv381663329399551" class="" title="chat widget"></iframe><iframe src="about:blank"
+            frameborder="0" scrolling="no" width="280px" height="330px"
+            style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:10px !important; bottom:90px !important; left:auto !important; position:fixed !important; border:0 !important; min-height:330px !important; min-width:280px !important; max-height:330px !important; max-width:280px !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:280px !important; height:330px !important; display:none !important; z-index:auto !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:5px !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important;"
+            id="b6rkvdtpp95g1663329399630" class="" title="chat widget"></iframe><iframe src="about:blank"
+            frameborder="0" scrolling="no" width="360px" height="291px"
+            style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:20px !important; bottom:100px; left:auto !important; position:fixed !important; border:0 !important; min-height:291px !important; min-width:360px !important; max-height:291px !important; max-width:360px !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:360px !important; height:291px !important; display:block !important; z-index:auto !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:unset !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important;"
+            id="dbj1jk99lk381663329399602" class="" title="chat widget"></iframe><iframe src="about:blank"
+            frameborder="0" scrolling="no" width="94px" height="74px"
+            style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:28px !important; bottom:65px !important; left:auto !important; position:fixed !important; border:0 !important; min-height:74px !important; min-width:94px !important; max-height:74px !important; max-width:94px !important; padding:0 !important; margin:0px 0 0 0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:rotate(0deg) translateZ(0); -webkit-transform:rotate(0deg) translateZ(0); -ms-transform:rotate(0deg) translateZ(0); width:94px !important; height:74px !important; display:none !important; z-index:1000002 !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:unset !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important; -moz-transform:rotate(0deg) translateZ(0); -o-transform:rotate(0deg) translateZ(0); transform-origin:0; -moz-transform-origin:0; -webkit-transform-origin:0; -o-transform-origin:0; -ms-transform-origin:0;"
+            id="rdivql8pjrjo1663329399577" class="" title="chat widget"></iframe></div>
+</body>
+
+</html>

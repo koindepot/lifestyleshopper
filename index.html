@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Shopping from your favourite stores made easy">
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="logo192.png">
+    <link rel="manifest" href="/manifest.json">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Shop With Us</title>
+</head>
+
+<body>
+    <div id="root">
+        <div class="App">
+            <nav class="navbar navbar-expand-lg navbar-light sticky-top"
+                style="margin: 0px; padding-top: 15px; padding-bottom: 15px; background: rgb(244, 244, 244);">
+                <div class="container"><span class="navbar-brand"
+                        style="font-weight: bold; font-size: 24px; padding-right: 50px;"><a href="index.html"> <img
+                                src="logo.png" alt="beta-eshopping logo" class="logo"
+                                style="width: 220px;"></a></span><button aria-controls="responsive-navbar-nav"
+                        type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="navbar-collapse collapse" id="responsive-navbar-nav">
+                        <div class="me-auto navbar-nav"><a role="button" class="nav-link" tabindex="0"
+                                style="color: rgb(67, 59, 128); font-weight: 600; padding-right: 20px; font-size: 14px;"><a
+                                    class="link" href="Browse_stores.html">Browse stores</a></a><a role="button"
+                                class="nav-link" tabindex="0"
+                                style="color: rgb(67, 59, 128); font-weight: 600; padding-right: 20px; font-size: 14px;"><a
+                                    class="link" href="how_it_works.html">How it works</a></a><a role="button"
+                                class="nav-link" tabindex="0"
+                                style="color: rgb(67, 59, 128); font-weight: 600; padding-right: 20px; font-size: 14px;"><a
+                                    class="link" href="faq.html">FAQs</a></a></div>
+                        <div class="navbar-nav"><a href="/signin" data-rr-ui-event-key="/signin" class="nav-link"
+                                style="color: rgb(67, 59, 128); font-weight: 600; padding-right: 20px; font-size: 14px; margin-right: 15px;"><a
+                                    class="link login-link" href="login.html">Login</a></a>
+                            <a href="signup.html"><button type="button" class="signup-btn btn btn-outline"
+                                    style="color: rgb(24, 23, 67); font-size: 14px; border: none; box-sizing: border-box; border-radius: 10px; width: 100px;">Sign
+                                    Up</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="progressBarContainer">
+                    <div id="progressBar" style="transform: scale(0, 1); opacity: 0;"></div>
+                </div>
+
+            </nav>
+            <div class="container home-hero-container">
+                <div class="px-4 home-title-container">
+                    <div class="gx-5 align-items-center row">
+                        <div class="col-lg-6">
+                            <div class="mb-2 mb-lg-0 text-center text-lg-start">
+                                <div class="home-hero-header"
+                                    style="font-size: 56px; font-weight: 600; font-family: Gill Sans; margin-top: -100px; color: rgb(67, 59, 128);">
+                                    <p class="styles_typicalWrapper__1_Uvh">Receive Locally </p>
+                                </div>
+                                <p class="lead fw-normal text-muted mb-5 text-description">Shop from your favourite
+                                    stores in Europe and North America.</p>
+                                <div class="d-flex flex-column flex-lg-row align-items-center"><a
+                                        href="Browse_stores.html" role="button" tabindex="0"
+                                        class="action-button btn btn-primary btn-lg"
+                                        style="width: 200px; height: 50px; display: block; background: rgb(67, 59, 128); border-radius: 10px; font-weight: 500; border: none;">Shop
+                                        Now</a><a href="how_it_works.html" role="button" tabindex="0"
+                                        class="btn btn-link"
+                                        style="margin-left: 20px; font-weight: 600; font-size: 16px; text-transform: uppercase; color: rgb(248, 65, 69); text-decoration: none;">Learn
+                                        More</a></div>
+                            </div>
+                        </div>
+                        <div class="home-svg col-lg-6">
+                            <div>
+                                <div class="container-fluid carousel-container">
+                                    <div class="owl-carousel undefined owl-loaded owl-drag">
+                                        <div class="owl-stage-outer">
+                                            <!-- <div class="owl-stage"
+                                                style="transform: translate3d(-1779px, 0px, 0px); transition: all 0.25s ease 0s; width: 4152px;">
+                                                <div class="owl-item cloned"
+                                                    style="width: 590.039px; margin-right: 3px;">
+                                                    <div><img class="img"
+                                                            src="promo-image-2.png"
+                                                            alt="promo-img"></div> -->
+                                            <!-- </div>-->
+                                            <div class="owl-item cloned adjust-img"
+                                                style="width: 590.039px; margin-right: 3px;">
+                                                <div><img class="img" src="promo-image-3.png" alt="promo-img"
+                                                        width="550px"></div>
+                                            </div>
+
+                                            <!-- </div>
+                                        <div class="owl-nav disabled"><button type="button" role="presentation"
+                                                class="owl-prev"><span aria-label="Previous">‹</span></button><button
+                                                type="button" role="presentation" class="owl-next"><span
+                                                    aria-label="Next">›</span></button></div>
+                                        <div class="owl-dots"><button role="button"
+                                                class="owl-dot"><span></span></button><button role="button"
+                                                class="owl-dot active"><span></span></button><button role="button"
+                                                class="owl-dot"><span></span></button></div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="background: rgb(248, 248, 248);">
+                        <div class="container">
+                            <div class="align-items-center row">
+                                <div class="row" style="align-items: center; text-align: center; margin-top: 70px;">
+                                    <div class="col">
+                                        <h4 class="mb-3"
+                                            style="color: rgb(24, 23, 67); font-size: 28px; font-weight: 600;">
+                                            Shop from
+                                            a wide range of stores</h4>
+                                        <p class="lead fw-normal text-muted mb-3"
+                                            style="font-size: 16px; font-weight: normal;">Over 30 stores supported
+                                            by
+                                            share-a-cart chrome extension</p>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-3"><a href="https://www.apple.com" target="_blank"
+                                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                                <div class="store-column">
+                                                    <div class="store-card card"
+                                                        style="border-radius: 15px; margin-bottom: 30px; width: 250px; text-align: center;">
+                                                        <div class="card-body">
+                                                            <p class="card-text"
+                                                                style="font-size: 14px; font-weight: normal;"><img
+                                                                    src="https://png.pngitem.com/pimgs/s/162-1627735_apple-store-logo-hd-png-download.png"
+                                                                    class=""
+                                                                    style="width: 50px; height: 50px; margin-right: 10px; border-radius: 5px;">Apple
+                                                                Store</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                        <div class="col-lg-3"><a href="https://www.aztecasoccer.com" target="_blank"
+                                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                                <div class="store-column">
+                                                    <div class="store-card card"
+                                                        style="border-radius: 15px; margin-bottom: 30px; width: 250px; text-align: center;">
+                                                        <div class="card-body">
+                                                            <p class="card-text"
+                                                                style="font-size: 14px; font-weight: normal;"><img
+                                                                    src="https://logopond.com/logos/32dc8690d5e3c2a2e9092506c2ac9928.png"
+                                                                    class=""
+                                                                    style="width: 50px; height: 50px; margin-right: 10px; border-radius: 5px;">Aztecasoccer
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                        <div class="col-lg-3"><a href="https://www.prettylittlething.com"
+                                                target="_blank" rel="noreferrer"
+                                                style="text-decoration: none; color: inherit;">
+                                                <div class="store-column">
+                                                    <div class="store-card card"
+                                                        style="border-radius: 15px; margin-bottom: 30px; width: 250px; text-align: center;">
+                                                        <div class="card-body">
+                                                            <p class="card-text"
+                                                                style="font-size: 14px; font-weight: normal;"><img
+                                                                    src="https://play-lh.googleusercontent.com/nJN0OJ8CPBSMMw3SeaplgMuC1At1avLBHvraWtsRslIxF8GxY2R5w0EByzs8wuz4zmp_"
+                                                                    class=""
+                                                                    style="width: 50px; height: 50px; margin-right: 10px; border-radius: 5px;">PRETTYLITTLETHING
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                        <div class="col-lg-3"><a href="https://www.hackett.com/" target="_blank"
+                                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                                <div class="store-column">
+                                                    <div class="store-card card"
+                                                        style="border-radius: 15px; margin-bottom: 30px; width: 250px; text-align: center;">
+                                                        <div class="card-body">
+                                                            <p class="card-text"
+                                                                style="font-size: 14px; font-weight: normal;"><img
+                                                                    src="https://khushiyan.pk/wp-content/uploads/2021/07/1619521246739.jpg"
+                                                                    class=""
+                                                                    style="width: 50px; height: 50px; margin-right: 10px; border-radius: 5px;">Hackett
+                                                                London</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                        <div class="col-lg-3"><a href="https://www.kennethcole.com" target="_blank"
+                                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                                <div class="store-column">
+                                                    <div class="store-card card"
+                                                        style="border-radius: 15px; margin-bottom: 30px; width: 250px; text-align: center;">
+                                                        <div class="card-body">
+                                                            <p class="card-text"
+                                                                style="font-size: 14px; font-weight: normal;"><img
+                                                                    src="https://m.media-amazon.com/images/S/aplus-media/vc/e2d0f70b-f630-46f3-9b55-1c3517c08f1c._CR0,0,300,300_PT0_SX300__.jpg"
+                                                                    class=""
+                                                                    style="width: 50px; height: 50px; margin-right: 10px; border-radius: 5px;">Kenneth
+                                                                Cole</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                        <div class="col-lg-3"><a href="https://www.crateandbarrel.com/" target="_blank"
+                                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                                <div class="store-column">
+                                                    <div class="store-card card"
+                                                        style="border-radius: 15px; margin-bottom: 30px; width: 250px; text-align: center;">
+                                                        <div class="card-body">
+                                                            <p class="card-text"
+                                                                style="font-size: 14px; font-weight: normal;"><img
+                                                                    src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1397200303/e1ed87605fcd959b734a2ae47ea9826a.png"
+                                                                    class=""
+                                                                    style="width: 50px; height: 50px; margin-right: 10px; border-radius: 5px;">Crate
+                                                                &amp; Barrel</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                        <div class="col-lg-3"><a href="https://www.wallis.co.uk/" target="_blank"
+                                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                                <div class="store-column">
+                                                    <div class="store-card card"
+                                                        style="border-radius: 15px; margin-bottom: 30px; width: 250px; text-align: center;">
+                                                        <div class="card-body">
+                                                            <p class="card-text"
+                                                                style="font-size: 14px; font-weight: normal;"><img
+                                                                    src="https://media.glassdoor.com/sqll/805029/wallis-squarelogo-1437141662018.png"
+                                                                    class=""
+                                                                    style="width: 50px; height: 50px; margin-right: 10px; border-radius: 5px;">Wallis
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                        <div class="col-lg-3"><a href="http://www.autozone.com" target="_blank"
+                                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                                <div class="store-column">
+                                                    <div class="store-card card"
+                                                        style="border-radius: 15px; margin-bottom: 30px; width: 250px; text-align: center;">
+                                                        <div class="card-body">
+                                                            <p class="card-text"
+                                                                style="font-size: 14px; font-weight: normal;"><img
+                                                                    src="https://pbs.twimg.com/profile_images/1304170131967311872/_8hPQMqw_400x400.jpg"
+                                                                    class=""
+                                                                    style="width: 50px; height: 50px; margin-right: 10px; border-radius: 5px;">Auto
+                                                                Zone</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                        <div class="col-lg-3"><a href="https://www.jdsports.co.uk/" target="_blank"
+                                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                                <div class="store-column">
+                                                    <div class="store-card card"
+                                                        style="border-radius: 15px; margin-bottom: 30px; width: 250px; text-align: center;">
+                                                        <div class="card-body">
+                                                            <p class="card-text"
+                                                                style="font-size: 14px; font-weight: normal;"><img
+                                                                    src="https://www.logolynx.com/images/logolynx/31/31ef3803d401138cedf7190e2c779f1a.jpeg"
+                                                                    class=""
+                                                                    style="width: 50px; height: 50px; margin-right: 10px; border-radius: 5px;">JDSports
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                        <div class="col-lg-3"><a href="http://www.wilko.com" target="_blank"
+                                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                                <div class="store-column">
+                                                    <div class="store-card card"
+                                                        style="border-radius: 15px; margin-bottom: 30px; width: 250px; text-align: center;">
+                                                        <div class="card-body">
+                                                            <p class="card-text"
+                                                                style="font-size: 14px; font-weight: normal;"><img
+                                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDdwWJiigNIZN1H7U8QXDyXbvbKfqRNvRkCpKNQ6-pGPzOnRYnWIysRYRQil-c84MzmOs&amp;usqp=CAU"
+                                                                    class=""
+                                                                    style="width: 50px; height: 50px; margin-right: 10px; border-radius: 5px;">Wilko
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                        <div class="col-lg-3"><a href="http://www.thefragranceshop.co.uk"
+                                                target="_blank" rel="noreferrer"
+                                                style="text-decoration: none; color: inherit;">
+                                                <div class="store-column">
+                                                    <div class="store-card card"
+                                                        style="border-radius: 15px; margin-bottom: 30px; width: 250px; text-align: center;">
+                                                        <div class="card-body">
+                                                            <p class="card-text"
+                                                                style="font-size: 14px; font-weight: normal;"><img
+                                                                    src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1479294749/kaiq2iq7unp6whcgalvn.jpg"
+                                                                    class=""
+                                                                    style="width: 50px; height: 50px; margin-right: 10px; border-radius: 5px;">The
+                                                                Fragrance Shop</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                        <div class="col-lg-3"><a href="http://www.shoezone.com" target="_blank"
+                                                rel="noreferrer" style="text-decoration: none; color: inherit;">
+                                                <div class="store-column">
+                                                    <div class="store-card card"
+                                                        style="border-radius: 15px; margin-bottom: 30px; width: 250px; text-align: center;">
+                                                        <div class="card-body">
+                                                            <p class="card-text"
+                                                                style="font-size: 14px; font-weight: normal;"><img
+                                                                    src="https://www.highchelmer.com/wp-content/uploads/2017/09/shoezone.png"
+                                                                    class=""
+                                                                    style="width: 50px; height: 50px; margin-right: 10px; border-radius: 5px;">Shoezone
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="row"
+                                    style="align-items: center; text-align: center; margin-top: 50px; margin-bottom: 50px; justify-content: center;">
+                                    <a href="/stores" role="button" tabindex="0"
+                                        class="action-button btn btn-primary btn-lg"
+                                        style="width: 300px; height: 50px; display: block; background: rgb(67, 59, 128); border-radius: 10px; font-weight: 500; border: none;">Browse
+                                        more stores</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="container">
+                            <div class="gx-5 align-items-center row">
+                                <div class="row" style="align-items: center; text-align: center; margin-top: 70px;">
+                                    <div class="col">
+                                        <h4 class="mb-3"
+                                            style="color: rgb(24, 23, 67); font-size: 28px; font-weight: 600;">
+                                            We offer
+                                            the best shopping experience</h4>
+                                    </div>
+                                </div>
+                                <div class="container"
+                                    style="text-align: center; margin-top: 70px; margin-bottom: 30px;">
+                                    <div class="align-items-center row">
+                                        <div class="svg-home-icon col-lg-4">
+                                            <div class="card"
+                                                style="width: 18rem; border: none; align-items: center; margin: 0px auto;">
+                                                <svg width="90" height="90" viewBox="0 0 90 90" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg" class="svg-icon">
+                                                    <g filter="url(#filter0_b_14_788)">
+                                                        <path
+                                                            d="M83.1837 56.4233L83.4312 55.7507H82.7144H65.0635C63.7864 55.7507 62.751 54.7153 62.751 53.4382C62.751 52.161 63.7864 51.1257 65.0635 51.1257H84.4505H84.8338L84.9334 50.7555C85.3933 49.0449 85.8585 47.17 86.3553 45.1183L86.5049 44.5007H85.8693L53.8135 44.5007C52.5364 44.5007 51.501 43.4653 51.501 42.1882C51.501 40.911 52.5364 39.8757 53.8135 39.8757L87.2161 39.8757H87.6124L87.7029 39.4898C88.2598 37.1152 88.7029 35.0526 88.9042 33.292C89.1785 30.8922 89.0773 28.5246 87.8251 26.3437C87.2981 25.4258 86.6392 24.5904 85.8695 23.864C84.0405 22.1379 81.7617 21.4878 79.364 21.1952C77.0675 20.915 74.1637 20.915 70.6956 20.9151H70.6644L11.5972 20.9151L8.27674 7.63469C7.833 5.85988 6.0345 4.78084 4.25969 5.22459C2.48488 5.66833 1.40584 7.46683 1.84959 9.24164L5.79285 25.013L5.79401 25.0178L9.46337 40.328L9.47058 40.3581C11.0253 46.8452 12.2593 51.9942 13.7271 56.0035C15.2391 60.1337 17.1133 63.3952 20.1494 65.9045C20.4092 66.1192 20.6738 66.328 20.9432 66.5306C24.091 68.8981 27.6995 69.9606 32.0684 70.4684C36.3092 70.9612 41.6036 70.9612 48.274 70.9612H48.3054H50.5313H50.5577C56.3294 70.9612 60.9111 70.9612 64.6106 70.5871C68.4151 70.2024 71.5961 69.3992 74.4725 67.5983C75.8249 66.7515 77.0815 65.7605 78.2202 64.6426C80.488 62.4164 81.969 59.7236 83.1837 56.4233ZM36.6425 83.9382C39.0987 83.9382 41.0899 81.947 41.0899 79.4908C41.0899 77.0346 39.0987 75.0434 36.6425 75.0434C34.1863 75.0434 32.1951 77.0346 32.1951 79.4908C32.1951 81.947 34.1863 83.9382 36.6425 83.9382ZM60.3267 83.9382C62.7829 83.9382 64.7741 81.947 64.7741 79.4908C64.7741 77.0346 62.7829 75.0434 60.3267 75.0434C57.8705 75.0434 55.8793 77.0346 55.8793 79.4908C55.8793 81.947 57.8705 83.9382 60.3267 83.9382Z"
+                                                            fill="#433B80" stroke="url(#paint0_linear_14_788)"
+                                                            stroke-linecap="round"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_b_14_788" x="-22.7502" y="-19.3752"
+                                                            width="136.28" height="127.813" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix">
+                                                            </feFlood>
+                                                            <feGaussianBlur in="BackgroundImage" stdDeviation="12">
+                                                            </feGaussianBlur>
+                                                            <feComposite in2="SourceAlpha" operator="in"
+                                                                result="effect1_backgroundBlur_14_788">
+                                                            </feComposite>
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="effect1_backgroundBlur_14_788" result="shape">
+                                                            </feBlend>
+                                                        </filter>
+                                                        <linearGradient id="paint0_linear_14_788" x1="2.25" y1="5.625"
+                                                            x2="79.6973" y2="91.4116" gradientUnits="userSpaceOnUse">
+                                                            <stop stop-color="white" stop-opacity="0.25"></stop>
+                                                            <stop offset="1" stop-color="white" stop-opacity="0">
+                                                            </stop>
+                                                        </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                                <div class="card-body">
+                                                    <div class="card-title h5"
+                                                        style="font-weight: 700; margin-top: 10px; margin-bottom: 20px;">
+                                                        YOU SHOP</div>
+                                                    <p class="card-text">Shop endlessly from a wide range of Europe
+                                                        and
+                                                        US stores</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="svg-home-icon col-lg-4">
+                                            <div class="card"
+                                                style="width: 18rem; border: none; align-items: center; margin: 0px auto;">
+                                                <svg width="90" height="90" viewBox="0 0 90 90" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg" class="svg-icon">
+                                                    <g filter="url(#filter0_b_15_794)">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M4.6875 45C4.6875 22.736 22.736 4.6875 45 4.6875C67.264 4.6875 85.3125 22.736 85.3125 45C85.3125 67.264 67.264 85.3125 45 85.3125C22.736 85.3125 4.6875 67.264 4.6875 45Z"
+                                                            fill="#433B80"></path>
+                                                        <path
+                                                            d="M45 4.1875C22.4599 4.1875 4.1875 22.4599 4.1875 45C4.1875 67.5401 22.4599 85.8125 45 85.8125C67.5401 85.8125 85.8125 67.5401 85.8125 45C85.8125 22.4599 67.5401 4.1875 45 4.1875Z"
+                                                            stroke="url(#paint0_linear_15_794)" stroke-linecap="round">
+                                                        </path>
+                                                    </g>
+                                                    <g filter="url(#filter1_d_15_794)">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M44.9999 15.9375C46.5532 15.9375 47.8124 17.1967 47.8124 18.75V19.6744C51.7777 20.3262 55.435 22.6847 57.6044 26.4422L59.0128 28.8816C59.7894 30.2268 59.3285 31.9469 57.9833 32.7235C56.6381 33.5002 54.918 33.0393 54.1414 31.6941L52.733 29.2547C51.6109 27.3111 49.8185 25.9926 47.8124 25.4269V43.0377L49.2339 43.5605C60.2954 47.6291 61.5927 62.7531 51.3857 68.6461C50.2406 69.3072 49.038 69.7875 47.8124 70.0949V71.25C47.8124 72.8033 46.5532 74.0625 44.9999 74.0625C43.4466 74.0625 42.1874 72.8033 42.1874 71.25V70.3255C38.2224 69.6735 34.5654 67.315 32.3962 63.5578L30.9878 61.1185C30.2112 59.7733 30.6721 58.0532 32.0173 57.2765C33.3625 56.4999 35.0826 56.9608 35.8592 58.306L37.2676 60.7453C38.3896 62.6887 40.1816 64.0071 42.1874 64.5729V46.9622L40.7667 46.4396C29.7052 42.3709 28.4079 27.247 38.6149 21.354C39.7597 20.693 40.9621 20.2127 42.1874 19.9053V18.75C42.1874 17.1967 43.4466 15.9375 44.9999 15.9375ZM41.4274 26.2254C41.677 26.0813 41.9306 25.9517 42.1874 25.8365V40.9498C36.0862 38.2554 35.5148 29.639 41.4274 26.2254ZM47.8124 64.164V49.0499C53.9143 51.7438 54.4861 60.3608 48.5732 63.7747C48.3233 63.9189 48.0694 64.0486 47.8124 64.164Z"
+                                                            fill="url(#paint1_linear_15_794)"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_b_15_794" x="-20.3125" y="-20.3125"
+                                                            width="130.625" height="130.625"
+                                                            filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix">
+                                                            </feFlood>
+                                                            <feGaussianBlur in="BackgroundImage" stdDeviation="12">
+                                                            </feGaussianBlur>
+                                                            <feComposite in2="SourceAlpha" operator="in"
+                                                                result="effect1_backgroundBlur_15_794">
+                                                            </feComposite>
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="effect1_backgroundBlur_15_794" result="shape">
+                                                            </feBlend>
+                                                        </filter>
+                                                        <filter id="filter1_d_15_794" x="27.6105" y="12.9375"
+                                                            width="44.7795" height="74.125" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix">
+                                                            </feFlood>
+                                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                                result="hardAlpha"></feColorMatrix>
+                                                            <feOffset dx="5" dy="5"></feOffset>
+                                                            <feGaussianBlur stdDeviation="4"></feGaussianBlur>
+                                                            <feColorMatrix type="matrix"
+                                                                values="0 0 0 0 0.176471 0 0 0 0 0.556863 0 0 0 0 0.678431 0 0 0 0.5 0">
+                                                            </feColorMatrix>
+                                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                                result="effect1_dropShadow_15_794"></feBlend>
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="effect1_dropShadow_15_794" result="shape">
+                                                            </feBlend>
+                                                        </filter>
+                                                        <linearGradient id="paint0_linear_15_794" x1="4.6875"
+                                                            y1="4.6875" x2="85.3534" y2="85.2716"
+                                                            gradientUnits="userSpaceOnUse">
+                                                            <stop stop-color="white" stop-opacity="0.25"></stop>
+                                                            <stop offset="1" stop-color="white" stop-opacity="0">
+                                                            </stop>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint1_linear_15_794" x1="45.2426"
+                                                            y1="86.4456" x2="108.28" y2="55.8504"
+                                                            gradientUnits="userSpaceOnUse">
+                                                            <stop stop-color="white"></stop>
+                                                            <stop offset="1" stop-color="white" stop-opacity="0.2">
+                                                            </stop>
+                                                        </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                                <div class="card-body">
+                                                    <div class="card-title h5"
+                                                        style="font-weight: 700; margin-top: 10px; margin-bottom: 20px;">
+                                                        WE PROCESS</div>
+                                                    <p class="card-text">You pay and we do the buying on your behalf
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="svg-home-icon col-lg-4">
+                                            <div class="card"
+                                                style="width: 18rem; border: none; align-items: center; margin: 0px auto;">
+                                                <svg width="90" height="90" viewBox="0 0 90 90" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg" class="svg-icon">
+                                                    <g filter="url(#filter0_b_15_805)">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M45 2.25C34.0445 2.25 24.9982 10.4194 23.6194 21L21.1348 21C17.4009 20.9999 14.3046 20.9998 11.8746 21.3393C9.3199 21.6963 7.02439 22.4844 5.27866 24.4349C3.53292 26.3853 3.00309 28.7538 2.93043 31.3323C2.86133 33.7849 3.20336 36.8623 3.6158 40.5733L4.77039 50.9645C5.633 58.7285 6.31048 64.8261 7.46117 69.5655C8.64062 74.4233 10.3948 78.2144 13.6515 81.1293C16.9113 84.047 20.8919 85.3701 25.8771 86.0051C30.7443 86.6251 36.9248 86.625 44.7991 86.625H45.2006C53.0749 86.625 59.2556 86.6251 64.1229 86.0051C69.1081 85.3701 73.0886 84.047 76.3484 81.1293C79.6051 78.2144 81.3593 74.4233 82.5388 69.5655C83.6894 64.8262 84.3669 58.7288 85.2295 50.9652L86.3842 40.5732C86.7966 36.8624 87.1386 33.7849 87.0695 31.3323C86.9969 28.7538 86.467 26.3853 84.7213 24.4349C82.9756 22.4844 80.68 21.6963 78.1254 21.3393C75.6954 20.9998 72.599 20.9999 68.8652 21L66.3806 21C65.002 10.4197 55.9554 2.25 45 2.25ZM45 7.875C52.8423 7.875 59.3622 13.5399 60.6902 21H29.3096C30.6375 13.5401 37.1577 7.875 45 7.875Z"
+                                                            fill="#433B80"></path>
+                                                        <path
+                                                            d="M45 1.75C33.9408 1.75 24.7837 9.88575 23.1847 20.5L21.1348 20.5H21.0995C17.3945 20.4999 14.2699 20.4998 11.8054 20.8441C9.19424 21.209 6.7636 22.0261 4.90609 24.1014C3.04858 26.1767 2.50489 28.6828 2.43063 31.3182C2.36055 33.8057 2.70569 36.911 3.11495 40.5934L3.11886 40.6285L4.27345 51.0198L4.27732 51.0546C5.13671 58.7896 5.81706 64.913 6.97529 69.6834C8.16739 74.5933 9.95697 78.4936 13.3181 81.5019C16.6828 84.5135 20.7762 85.8594 25.8139 86.5011C30.7127 87.1251 36.919 87.125 44.7643 87.125H44.7991H45.2006H45.2354C53.0807 87.125 59.2873 87.1251 64.1861 86.5011C69.2237 85.8594 73.3171 84.5135 76.6819 81.5019C80.043 78.4936 81.8326 74.5933 83.0247 69.6834C84.1829 64.9131 84.8632 58.7897 85.7226 51.0548L85.7264 51.0204L86.8811 40.6284L86.885 40.5933C87.2943 36.9111 87.6394 33.8056 87.5693 31.3182C87.4951 28.6828 86.9514 26.1767 85.0939 24.1014C83.2363 22.0261 80.8057 21.209 78.1946 20.8441C75.73 20.4998 72.6055 20.4999 68.9004 20.5H68.8652L66.8152 20.5C65.2165 9.88596 56.0591 1.75 45 1.75ZM45 8.375C52.3885 8.375 58.566 13.5665 60.0815 20.5H29.9184C31.4337 13.5667 37.6115 8.375 45 8.375Z"
+                                                            stroke="url(#paint0_linear_15_805)" stroke-linecap="round">
+                                                        </path>
+                                                    </g>
+                                                    <g filter="url(#filter1_d_15_805)">
+                                                        <path
+                                                            d="M24.4887 36.8238C23.3904 35.7254 21.6096 35.7254 20.5113 36.8238C19.4129 37.9221 19.4129 39.7029 20.5113 40.8012L22.7613 43.0512C35.0434 55.3334 54.9566 55.3334 67.2387 43.0512L69.4887 40.8012C70.5871 39.7029 70.5871 37.9221 69.4887 36.8238C68.3904 35.7254 66.6096 35.7254 65.5113 36.8238L63.2613 39.0738C53.1758 49.1592 36.8242 49.1592 26.7387 39.0738L24.4887 36.8238Z"
+                                                            fill="url(#paint1_linear_15_805)"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_b_15_805" x="-22.0785" y="-22.75"
+                                                            width="134.157" height="134.375"
+                                                            filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix">
+                                                            </feFlood>
+                                                            <feGaussianBlur in="BackgroundImage" stdDeviation="12">
+                                                            </feGaussianBlur>
+                                                            <feComposite in2="SourceAlpha" operator="in"
+                                                                result="effect1_backgroundBlur_15_805">
+                                                            </feComposite>
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="effect1_backgroundBlur_15_805" result="shape">
+                                                            </feBlend>
+                                                        </filter>
+                                                        <filter id="filter1_d_15_805" x="16.6875" y="33" width="66.625"
+                                                            height="32.2628" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix">
+                                                            </feFlood>
+                                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                                result="hardAlpha"></feColorMatrix>
+                                                            <feOffset dx="5" dy="5"></feOffset>
+                                                            <feGaussianBlur stdDeviation="4"></feGaussianBlur>
+                                                            <feColorMatrix type="matrix"
+                                                                values="0 0 0 0 0.176471 0 0 0 0 0.556863 0 0 0 0 0.678431 0 0 0 0.5 0">
+                                                            </feColorMatrix>
+                                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                                result="effect1_dropShadow_15_805"></feBlend>
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="effect1_dropShadow_15_805" result="shape">
+                                                            </feBlend>
+                                                        </filter>
+                                                        <linearGradient id="paint0_linear_15_805" x1="2.92151" y1="2.25"
+                                                            x2="87.3388" y2="86.3638" gradientUnits="userSpaceOnUse">
+                                                            <stop stop-color="white" stop-opacity="0.25"></stop>
+                                                            <stop offset="1" stop-color="white" stop-opacity="0">
+                                                            </stop>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint1_linear_15_805" x1="45.4263"
+                                                            y1="55.7275" x2="58.7135" y2="15.1824"
+                                                            gradientUnits="userSpaceOnUse">
+                                                            <stop stop-color="white"></stop>
+                                                            <stop offset="1" stop-color="white" stop-opacity="0.2">
+                                                            </stop>
+                                                        </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                                <div class="card-body">
+                                                    <div class="card-title h5"
+                                                        style="font-weight: 700; margin-top: 10px; margin-bottom: 20px;">
+                                                        WE DELIVER</div>
+                                                    <p class="card-text">We deliver your items to your door step</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer_container">
+                <div class="footer_wrapper">
+                    <div class="footer_child first_grid_item">
+                        <img src="https://www.beta-eshopping.com/static/media/logo.13603e39d5312ebe952e.png"
+                            alt="footer logo" width="200">
+                    </div>
+
+                    <div class="footer_child second_grid_item">
+                        <ul>
+                            <li class="footer_list_item"><a href="#">Company</a> </li>
+                            <li class="footer_list_item"><a href="#">About us</a> </li>
+                            <li class="footer_list_item"><a href="#">Contact us</a> </li>
+                            <li class="footer_list_item"><a href="#">Support</a> </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_child third_grid_item">
+                        <ul>
+                            <li class="footer_list_item"><a href="#">Shopping</a> </li>
+                            <li class="footer_list_item"><a href="#">How it works</a> </li>
+                            <li class="footer_list_item"><a href="#">List of stores</a> </li>
+                            <li class="footer_list_item"><a href="#">Terms and conditions</a> </li>
+                            <li class="footer_list_item"><a href="#">FAQs</a> </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_child fourth_grid_item">
+                        <ul>
+                            <li class="footer_list_item"><a href="#">Let's stay connected</a> </li>
+                            <li class="footer_list_item"></li>
+                            <li class="footer_list_item"><a href="#">Emmanuel Plaza, 23b, Fatai Atere Way,
+                                    Matori
+                                    102215,
+                                    Lagos, Nigeria.</a> </li>
+                            <li class="footer_list_item"><a href="#">info@beta-eshopping.com</a> </li>
+                            <li class="footer_list_item"><a href="#">+234-1-714-0067</a> </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_child fifth_grid_item">
+                        <p>Betaeshopping &copy; | 2022 All Rights Reserved</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script async="" charset="UTF-8" src="main.js"></script>
+        <div id="e42svtveh8781663170126866" class="widget-hidden"><iframe src="about:blank" frameborder="0"
+                scrolling="no" width="38.61px" height="17.82px"
+                style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:4.95px !important; bottom:4.95px !important; left:auto !important; position:fixed !important; border:0 !important; min-height:17.82px !important; min-width:38.61px !important; max-height:17.82px !important; max-width:38.61px !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:38.61px !important; height:17.82px !important; display:block !important; z-index:1000001 !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:unset !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important;"
+                id="i830jkro1qc1663170126987" class="" title="chat widget"></iframe><iframe src="about:blank"
+                frameborder="0" scrolling="no" width="100%" height="100%"
+                style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:0px !important; right:0px !important; bottom:0px !important; left:0px !important; position:fixed !important; border:0 !important; min-height:100% !important; min-width:100% !important; max-height:100% !important; max-width:100% !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:100% !important; height:100% !important; display:none !important; z-index:auto !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:0px !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important;"
+                id="yttb32e4poeg1663170127105" class="" title="chat widget"></iframe><iframe src="about:blank"
+                frameborder="0" scrolling="no" width="261.558px" height="18.150000000000002px"
+                style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:auto !important; right:4.95px !important; bottom:27.39px; left:auto !important; position:fixed !important; border:0 !important; min-height:18.150000000000002px !important; min-width:261.558px !important; max-height:18.150000000000002px !important; max-width:261.558px !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:261.558px !important; height:18.150000000000002px !important; display:none !important; z-index:auto !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:unset !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important;"
+                id="jjgf7aveg5ko1663170127039" class="" title="chat widget"></iframe>
+            <div id="chat-bubble">
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>

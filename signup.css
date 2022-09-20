@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    width: 20px;
+}
+
+p {
+    color: white;
+    margin-bottom: 0;
+}
+
+.d-flex {
+    gap: 1rem;
+}
+
+.col a {
+    text-decoration: none;
+}
+
+img {
+    width: 20px;
+}
+
+.register-form {
+    margin-bottom: 2rem;
+}
